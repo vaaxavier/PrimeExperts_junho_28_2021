@@ -4,7 +4,7 @@ Resource         resource.mobile.robot
 Suite Setup      Abrir o aplicativo no celular
 
 *** Test Cases ***
-Pesquisar canal “Adrenaline”
+ Caso de Teste 01:Pesquisar canal “Adrenaline” 
     Buscar o canal “Adrenaline"
     Selecionar o canal na lista de busca
     Navegar pelo menu Playlist

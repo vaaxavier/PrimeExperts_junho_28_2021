@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210705 03:54:39.639" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210705 19:04:44.169" rpa="false" schemaversion="2">
 <suite id="s1" name="Mobile Testing" source="C:\Users\vaaxa\OneDrive\Backup Dropbox\Backup Onedrvive\Documentos\Projetos\Prime Experts\PrimeExperts_junho_28_2021\mobile_testing">
 <suite id="s1-s1" name="Mobile Test" source="C:\Users\vaaxa\OneDrive\Backup Dropbox\Backup Onedrvive\Documentos\Projetos\Prime Experts\PrimeExperts_junho_28_2021\mobile_testing\mobile_test.robot">
 <kw name="Abrir o aplicativo no celular" library="resource.mobile" type="SETUP">
@@ -17,31 +17,29 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<msg timestamp="20210705 03:54:41.960" level="INFO">Could not connect to port 4723 on host localhost</msg>
-<msg timestamp="20210705 03:54:41.960" level="INFO">Could not get IP address for host: localhost</msg>
-<msg timestamp="20210705 03:54:46.073" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C41490D0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
-<msg timestamp="20210705 03:54:50.147" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C4149310&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
-<msg timestamp="20210705 03:54:54.232" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C4149490&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210705 03:54:58.340" level="FAIL">No application is open</msg>
-<status status="FAIL" starttime="20210705 03:54:58.310" endtime="20210705 03:54:58.340"/>
+<msg timestamp="20210705 19:05:06.823" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20210705 19:05:06.823" endtime="20210705 19:05:06.823"/>
 </kw>
-<msg timestamp="20210705 03:54:58.340" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20210705 03:54:58.361" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C41495E0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))</msg>
-<status status="FAIL" starttime="20210705 03:54:39.930" endtime="20210705 03:54:58.361"/>
+<msg timestamp="20210705 19:05:06.823" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20210705 19:05:06.839" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20216ms.
+</msg>
+<status status="FAIL" starttime="20210705 19:04:44.419" endtime="20210705 19:05:06.839"/>
 </kw>
-<status status="FAIL" starttime="20210705 03:54:39.929" endtime="20210705 03:54:58.361"/>
+<status status="FAIL" starttime="20210705 19:04:44.419" endtime="20210705 19:05:06.839"/>
 </kw>
-<test id="s1-s1-t1" name="Pesquisar canal “Adrenaline”">
-<status status="FAIL" starttime="20210705 03:54:58.361" endtime="20210705 03:54:58.367">Parent suite setup failed:
-MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C41495E0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))</status>
+<test id="s1-s1-t1" name=" Caso de Teste 01:Pesquisar canal “Adrenaline”">
+<status status="FAIL" starttime="20210705 19:05:06.839" endtime="20210705 19:05:06.839">Parent suite setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20216ms.
+</status>
 </test>
 <doc>arquivo responsavel pelos testes do mobile testing App: YouTube</doc>
-<status status="FAIL" starttime="20210705 03:54:39.675" endtime="20210705 03:54:58.372">Suite setup failed:
-MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C41495E0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))</status>
+<status status="FAIL" starttime="20210705 19:04:44.185" endtime="20210705 19:05:06.839">Suite setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20216ms.
+</status>
 </suite>
-<status status="FAIL" starttime="20210705 03:54:39.642" endtime="20210705 03:54:58.379"/>
+<status status="FAIL" starttime="20210705 19:04:44.169" endtime="20210705 19:05:06.839"/>
 </suite>
 <statistics>
 <total>
@@ -55,9 +53,7 @@ MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exce
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210705 03:54:46.073" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C41490D0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
-<msg timestamp="20210705 03:54:50.147" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C4149310&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
-<msg timestamp="20210705 03:54:54.232" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002A5C4149490&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
-<msg timestamp="20210705 03:54:58.340" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20210705 19:04:44.201" level="ERROR">Error in file 'C:\Users\vaaxa\OneDrive\Backup Dropbox\Backup Onedrvive\Documentos\Projetos\Prime Experts\PrimeExperts_junho_28_2021\mobile_testing\resource.mobile.robot' on line 21: Setting variable 'aylists' failed: Invalid variable name 'aylists'.</msg>
+<msg timestamp="20210705 19:05:06.823" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>
