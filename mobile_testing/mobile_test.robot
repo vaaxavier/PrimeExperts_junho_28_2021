@@ -1,14 +1,12 @@
 *** Settings ***
-Documentation     arquivo responsavel pelos testes de mobile testing App: Youtube
-Resource          ./resource_mobile.robot
+Documentation    arquivo responsavel pelos testes do mobile testing App: YouTube
+Resource         resource.mobile.robot
+Suite Setup      Abrir o aplicativo no celular
 
 *** Test Cases ***
-
-Pesquisar canal "Adrenaline"
-
-*** Keywords ***
-Teste
-    [Arguments]   ${num_inicial}    ${num_final}
-    FOR    ${count}    IN RANGE    ${num_inicial}    ${num_final}
-        Log To Console    ${\n}Estou no numero ${count}
-    END
+Pesquisar canal “Adrenaline”
+    Buscar o canal “Adrenaline"
+    Selecionar o canal na lista de busca
+    Navegar pelo menu Playlist
+    Selecionar a playlist da E3 do canal
+    Navegar por todos os botões da barra de Menus(Home, Explorar...) do YouTube
