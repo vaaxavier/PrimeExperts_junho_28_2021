@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Meu teste de dictionary
+Documentation    Meu teste de dicionário
 
 *** Variables ***
 ${MPB}             Marisa Monte
