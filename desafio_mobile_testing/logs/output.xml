@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210706 18:15:28.198" rpa="false" schemaversion="2">
+<suite id="s1" name="Desafio Mobile Testing" source="C:\Users\vaaxa\OneDrive\Backup Dropbox\Backup Onedrvive\Documentos\Projetos\Prime Experts\PrimeExperts_junho_28_2021\desafio_mobile_testing">
+<suite id="s1-s1" name="Desafio Mobile" source="C:\Users\vaaxa\OneDrive\Backup Dropbox\Backup Onedrvive\Documentos\Projetos\Prime Experts\PrimeExperts_junho_28_2021\desafio_mobile_testing\desafio_mobile.robot">
+<kw name=" Abrir o aplicativo no celular" library="desafio_resource" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20210706 18:15:28.512" endtime="20210706 18:15:43.141"/>
+</kw>
+<status status="PASS" starttime="20210706 18:15:28.512" endtime="20210706 18:15:43.141"/>
+</kw>
+<test id="s1-s1-t1" name="Caso de Teste 02: Logar no YouTube">
+<kw name="Logar no aplicativo com a conta" library="desafio_resource">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${ACCOUNT}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20210706 18:15:43.143" endtime="20210706 18:15:46.524"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ACCOUNT}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20210706 18:15:46.530" level="INFO">Clicking element 'accessibility_id=Account'.</msg>
+<status status="PASS" starttime="20210706 18:15:46.524" endtime="20210706 18:15:46.751"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${ACCOUNT_NAME}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20210706 18:15:52.194" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="1977"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.google.android.youtube" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1977]" displayed="true"&gt;
+    &lt;android.widget.FrameLayout index="0" package="com.google.android.youtube" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1977]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.google.android.youtube" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,171][1080,1977]" displayed="true"&gt;
+        &lt;android.widget.LinearLayout index="0" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,171][1080,1977]" displayed="true"&gt;
+          &lt;android.view.ViewGroup index="0" package="com.google.android.youtube" class="android.view.ViewGroup" text="" resource-id="com.google.android.youtube:id/toolbar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,171][1080,303]" displayed="true"&gt;
+            &lt;android.widget.ImageButton index="0" package="com.google.android.youtube" class="android.widget.ImageButton" text="" content-desc="Close" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,171][154,303]" displayed="true" /&gt;
+          &lt;/android.view.ViewGroup&gt;
+          &lt;android.support.v7.widget.RecyclerView index="1" package="com.google.android.youtube" class="android.support.v7.widget.RecyclerView" text="" resource-id="com.google.android.youtube:id/list" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,303][1080,1977]" displayed="true"&gt;
+            &lt;android.widget.GridLayout index="0" package="com.google.android.youtube" class="android.widget.GridLayout" text="" resource-id="com.google.android.youtube:id/signed_in_view" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,303][1080,646]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" content-desc="Your channel" resource-id="com.google.android.youtube:id/account_thumbnail" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,347][154,457]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,457][1080,643]" displayed="true"&gt;
+                &lt;android.widget.LinearLayout index="0" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" resource-id="com.google.android.youtube:id/account_name_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,457][621,643]" displayed="true"&gt;
+                  &lt;android.widget.Button index="0" package="com.google.android.youtube" class="android.widget.Button" text="Valéria Xavier" content-desc="Valéria Xavier. Switch accounts." resource-id="com.google.android.youtube:id/account_name" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,468][444,534]" displayed="true" /&gt;
+                  &lt;android.widget.Button index="1" package="com.google.android.youtube" class="android.widget.Button" text="Manage your Google Account" resource-id="com.google.android.youtube:id/manage_account" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,551][621,610]" displayed="true" /&gt;
+                &lt;/android.widget.LinearLayout&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+              &lt;android.view.View index="2" package="com.google.android.youtube" class="android.view.View" text="" resource-id="com.google.android.youtube:id/separator" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,643][1080,646]" displayed="true" /&gt;
+            &lt;/android.widget.GridLayout&gt;
+            &lt;android.widget.LinearLayout index="1" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,646][1080,778]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,657][154,767]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,682][1036,741]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Your channel" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,682][451,741]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.LinearLayout index="2" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,778][1080,910]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,789][154,899]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,814][1036,873]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="YouTube Studio" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,814][504,873]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.LinearLayout index="3" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,910][1080,1042]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,921][154,1031]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,946][1036,1005]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Time watched" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,946][474,1005]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.LinearLayout index="4" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1042][1080,1174]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,1053][154,1163]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1078][1036,1137]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Get YouTube Premium" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1078][636,1137]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.LinearLayout index="5" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1174][1080,1306]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,1185][154,1295]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1210][1036,1269]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Purchases and memberships" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1210][770,1269]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.LinearLayout index="6" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1306][1080,1438]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,1317][154,1427]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1342][1036,1401]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Switch account" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1342][497,1401]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.LinearLayout index="7" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1438][1080,1570]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,1449][154,1559]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1474][1036,1533]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Turn on Incognito" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1474][539,1533]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.FrameLayout index="8" package="com.google.android.youtube" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1570][1080,1614]" displayed="true" /&gt;
+            &lt;android.widget.LinearLayout index="9" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1614][1080,1746]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,1625][154,1735]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1650][1036,1709]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Settings" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1650][358,1709]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+            &lt;android.widget.LinearLayout index="10" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1746][1080,1878]" displayed="true"&gt;
+              &lt;android.widget.ImageView index="0" package="com.google.android.youtube" class="android.widget.ImageView" text="" resource-id="com.google.android.youtube:id/thumbnail" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,1757][154,1867]" displayed="true" /&gt;
+              &lt;android.widget.RelativeLayout index="1" package="com.google.android.youtube" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1782][1036,1841]" displayed="true"&gt;
+                &lt;android.widget.TextView index="0" package="com.google.android.youtube" class="android.widget.TextView" text="Help &amp;amp; feedback" resource-id="com.google.android.youtube:id/title" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[198,1782][516,1841]" displayed="true" /&gt;
+              &lt;/android.widget.RelativeLayout&gt;
+            &lt;/android.widget.LinearLayout&gt;
+          &lt;/android.support.v7.widget.RecyclerView&gt;
+          &lt;android.widget.LinearLayout index="2" package="com.google.android.youtube" class="android.widget.LinearLayout" text="" resource-id="com.google.android.youtube:id/privacy_tos_footer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,2060][1080,2148]" displayed="true"&gt;
+            &lt;android.widget.Button index="0" package="com.google.android.youtube" class="android.widget.Button" text="Privacy Policy" resource-id="com.google.android.youtube:id/privacy_footer" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[290,2082][495,2126]" displayed="true" /&gt;
+            &lt;android.widget.TextView index="1" package="com.google.android.youtube" class="android.widget.TextView" text="  •  " resource-id="com.google.android.youtube:id/privacy_tos_dot" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[495,2082][539,2126]" displayed="true" /&gt;
+            &lt;android.widget.Button index="2" package="com.google.android.youtube" class="android.widget.Button" text="Terms of Service" resource-id="com.google.android.youtube:id/tos_footer" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[539,2082][790,2126]" displayed="true" /&gt;
+          &lt;/android.widget.LinearLayout&gt;
+        &lt;/android.widget.LinearLayout&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.FrameLayout&gt;
+    &lt;android.view.View index="1" package="com.google.android.youtube" class="android.view.View" text="" resource-id="android:id/statusBarBackground" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,171]" displayed="true" /&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210706 18:15:52.698" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210706 18:15:52.195" endtime="20210706 18:15:52.698"/>
+</kw>
+<msg timestamp="20210706 18:15:52.699" level="FAIL">Element locator 'id=com.google.android.youtube:id/button' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20210706 18:15:46.752" endtime="20210706 18:15:52.699"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ACCOUNT_NAME}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20210706 18:15:52.699" endtime="20210706 18:15:52.699"/>
+</kw>
+<status status="FAIL" starttime="20210706 18:15:43.142" endtime="20210706 18:15:52.699"/>
+</kw>
+<kw name="Entrar no menu “Explorar”" library="desafio_resource">
+<status status="NOT RUN" starttime="20210706 18:15:52.699" endtime="20210706 18:15:52.699"/>
+</kw>
+<kw name="Usar swipe de tela até o 10 item da tela" library="desafio_resource">
+<status status="NOT RUN" starttime="20210706 18:15:52.700" endtime="20210706 18:15:52.700"/>
+</kw>
+<kw name="Clicar no vídeo" library="desafio_resource">
+<status status="NOT RUN" starttime="20210706 18:15:52.700" endtime="20210706 18:15:52.700"/>
+</kw>
+<status status="FAIL" starttime="20210706 18:15:43.141" endtime="20210706 18:15:52.700">Element locator 'id=com.google.android.youtube:id/button' did not match any elements after 5 seconds</status>
+</test>
+<doc>arquivo responsavel pelas variaveis, KW e variaveis do proveto mobile testing</doc>
+<status status="FAIL" starttime="20210706 18:15:28.236" endtime="20210706 18:15:52.702"/>
+</suite>
+<status status="FAIL" starttime="20210706 18:15:28.202" endtime="20210706 18:15:52.703"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Desafio Mobile Testing">Desafio Mobile Testing</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Desafio Mobile">Desafio Mobile Testing.Desafio Mobile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
