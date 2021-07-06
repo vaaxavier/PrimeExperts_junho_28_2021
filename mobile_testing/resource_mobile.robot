@@ -1,4 +1,4 @@
-** Settings ***
+*** Settings ***
 Documentation    arquivo responsavel pelas variaveis, KW e variaveis do proveto mobile testing
 Library          AppiumLibrary
 
@@ -17,8 +17,7 @@ ${AUTOMATION_NAME}         UiAutomator2
 ${BTN_SEARCH}                  accessibility_id=Search
 ${INPUT_SEARCH}                search_edit_text
 ${CHANNEL_NAME}                channel_name
-${PLAYLISTS}                   accessibility_id=Pl
-aylists
+${PLAYLISTS}                   accessibility_id=Playlists
 ${CHOOSE_E3}                   xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.TextView[1]
 ${HOME_BTN}                    accessibility_id=Home
 ${TRENDING_BTN}                accessibility_id=Trending
@@ -39,17 +38,16 @@ Buscar o canal “${nome_do_canal}"
     Press Keycode                        66
 
 Selecionar o canal na lista de busca
-    Wait Until Element Is Visible    ${CHANNEL_NAME}
-    Click Element    ${CHANNEL_NAME}
+    Wait Until Element Is Visible    ${CHANNEL_NAME}        10
+    Click Element                    ${CHANNEL_NAME}
 
 Navegar pelo menu Playlist
-    Wait Until Element Is Visible    ${PLAYLISTS}
-    Click Element    ${PLAYLISTS}
-
+    Wait Until Element Is Visible    ${PLAYLISTS}            10
+    Click Element                    ${PLAYLISTS}
 
 Selecionar a playlist da E3 do canal
-    Wait Until Element Is Visible    ${CHOOSE_E3}    10
-    Click Element              ${CHOOSE_E3}
+    Wait Until Element Is Visible    ${CHOOSE_E3}            10
+    Click Element                    ${CHOOSE_E3}
 
 Navegar por todos os botões da barra de Menus(Home, Explorar...) do YouTube
     Click Element    ${HOME_BTN}

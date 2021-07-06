@@ -1,10 +1,10 @@
 *** Settings ***
-Documentation    arquivo responsavel pelos testes do mobile testing App: YouTube
-Resource         resource.mobile.robot
+Documentation    arquivo responsavel pelas variaveis, KW e variaveis do proveto mobile testing
+Resource         resource_mobile.robot
 Suite Setup      Abrir o aplicativo no celular
 
 *** Test Cases ***
- Caso de Teste 01:Pesquisar canal “Adrenaline” 
+Pesquisar canal “Adrenaline”
     Buscar o canal “Adrenaline"
     Selecionar o canal na lista de busca
     Navegar pelo menu Playlist
